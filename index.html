@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <header class="container-fluid text-center">
+     
+      <h2>JS Assignment</h2>
+
+    </header>
+  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <hr>
+          <h3>Registration Form</h3>
+          <hr>
+          <div class="container border border-1 border-dark rounded-6 bg-light">
+            <form class="m-4" id="form">
+              <div class="mb-3 row">
+                <div class="col-md-3">
+                  <label for="first-name" class="col-form-label"
+                    >First Name</label
+                  >
+                </div>
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    required
+                    id="FirstName"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-3">
+                  <label for="last-name" class="col-form-label"
+                    >Last Name</label
+                  >
+                </div>
+                <div class="col-md-9">
+                  <input
+                    type="text"
+                    required
+                    id="LastName"
+                    class="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-3">
+                  <label for="Email" required class="col-form-label"
+                    >Email Id</label
+                  >
+                </div>
+                <div class="col-md-9">
+                  <input
+                    type="email"
+                    id="Email"
+                    class="form-control"
+                    placeholder="abc@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="mb-4 row">
+                <div class="col-md-3">
+                  <label for="Contact" class="col-form-label">Gender</label>
+                </div>
+                <div class="col-md-9">
+                  <select
+                    name="gender"
+                    type="select"
+                    id="Gender"
+                    class="form-control"
+                  >
+                    <option value="Nil">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4 row">
+                <div class="col-md-3">
+                  <label for="Contact" class="col-form-label"
+                    >Phone Number</label
+                  >
+                </div>
+                <div class="col-md-9">
+                  <input
+                    type="number"
+                    id="Contact"
+                    value="nil"
+                    class="form-control"
+                    placeholder="Mobile Number"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-md-12">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onclick="addData()"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+           <hr>
+          <h3>Employee Data</h3>
+          <hr>
+          <div class="table-responsive">
+            <table class="table table-light table-striped table-hover">
+              <thead>
+                <tr class="text-center">
+                  <th scope="col">S.No.</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Phone number</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr class="text-center" id="row_1">
+                  <td id="col_1_1"></td>
+                  <td id="col_1_2"></td>
+                  <td id="col_1_3"></td>
+                  <td id="col_1_4"></td>
+                  <td id="col_1_5"></td>
+                </tr>
+                <tr class="text-center" id="row_2">
+                  <td id="col_2_1"></td>
+                  <td id="col_2_2"></td>
+                  <td id="col_2_3"></td>
+                  <td id="col_2_4"></td>
+                  <td id="col_2_5"></td>
+                </tr>
+                <tr class="text-center" id="row_3">
+                  <td id="col_3_1"></td>
+                  <td id="col_3_2"></td>
+                  <td id="col_3_3"></td>
+                  <td id="col_3_4"></td>
+                  <td id="col_3_5"></td>
+                </tr>
+                <tr class="text-center" id="row_4">
+                  <td id="col_4_1"></td>
+                  <td id="col_4_2"></td>
+                  <td id="col_4_3"></td>
+                  <td id="col_4_4"></td>
+                  <td id="col_4_5"></td>
+                </tr>
+                <tr class="text-center" id="row_5">
+                  <td id="col_5_1"></td>
+                  <td id="col_5_2"></td>
+                  <td id="col_5_3"></td>
+                  <td id="col_5_4"></td>
+                  <td id="col_5_5"></td>
+                </tr>
+                <tr class="text-center" id="row_6">
+                  <td id="col_6_1"></td>
+                  <td id="col_6_2"></td>
+                  <td id="col_6_3"></td>
+                  <td id="col_6_4"></td>
+                  <td id="col_6_5"></td>
+                </tr>
+                <tr class="text-center" id="row_7">
+                  <td id="col_7_1"></td>
+                  <td id="col_7_2"></td>
+                  <td id="col_7_3"></td>
+                  <td id="col_7_4"></td>
+                  <td id="col_7_5"></td>
+                </tr>
+                <tr class="text-center" id="row_8">
+                  <td id="col_8_1"></td>
+                  <td id="col_8_2"></td>
+                  <td id="col_8_3"></td>
+                  <td id="col_8_4"></td>
+                  <td id="col_8_5"></td>
+                </tr>
+                <tr class="text-center" id="row_9">
+                  <td id="col_9_1"></td>
+                  <td id="col_9_2"></td>
+                  <td id="col_9_3"></td>
+                  <td id="col_9_4"></td>
+                  <td id="col_9_5"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
