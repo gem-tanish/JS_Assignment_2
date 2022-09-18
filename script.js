@@ -53,7 +53,11 @@ function addData(){
             nor++;
         }
         serial_num++;
+        
         document.getElementById("form").reset();
+    }
+    else{
+        alert("ERROR ! Please fill the details correctly")
     }
 }
 
